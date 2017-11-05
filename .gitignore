@@ -99,3 +99,15 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.DS_Store
+
+*.csv
+/frames
+
+*.png
+*.jpg
+*.xcf
+*.tiff
+phantom*
+
