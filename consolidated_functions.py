@@ -214,7 +214,7 @@ def create_image_map(image_data, bounds):
     delta_lat = (max_lon-min_lon)/aspect_ratio*np.cos(min_lat/360*2*np.pi)
 
     # add the image to the map
-    img = plugins.ImageOverlay(map_overlay,
+    img = folium.raster_layers.ImageOverlay(map_overlay,
                                bounds = [(max_lat-delta_lat,min_lon),(max_lat,max_lon)],
                                opacity = 1,
                                name = "Paths")
