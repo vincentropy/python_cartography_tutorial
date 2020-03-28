@@ -128,7 +128,7 @@ def plot_station_counts(trip_counts, zoom_start=13):
                           net_departures)
         
         # radius of circles
-        radius = net_departures/20
+        radius = abs(net_departures/20)
         
         # choose the color of the marker
         if net_departures>0:
